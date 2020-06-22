@@ -1,14 +1,14 @@
 {
-  "name": "netlify-function-example",
+  "name": "rest-apis",
   "version": "1.0.0",
-  "main": "index.js",
-  "author": "Kent C. Dodds <kent@doddsfamily.us> (http://kentcdodds.com/)",
+  "description": "Using netlify addons",
+  "keywords": [],
+  "author": "David Wells <hello@davidwells.io> (https://davidwells.io/)",
   "license": "MIT",
-  "devDependencies": {
-    "netlify-lambda": "^1.4.3"
-  },
   "scripts": {
-    "dev": "netlify-lambda serve functions",
-    "build": "netlify-lambda build functions"
+    "setup": "netlify dev:exec node ./scripts/setup-schema.js"
+  },
+  "dependencies": {
+    "faunadb": "^2.6.1"
   }
 }
